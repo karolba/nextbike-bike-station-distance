@@ -19,18 +19,7 @@ const mapsLink = bikeOrStation => `https://maps.google.com/?q=${bikeOrStation.la
 const minDistance = args => args.reduce((acc, val) => acc < val ? acc : val, Distance('1000000 km'))
 const maxDistance = args => args.reduce((acc, val) => acc > val ? acc : val, Distance('0 km'))
 
-
-/* testing: */ {
-	console.log(`Bikes: ${bikes.length}/${data.length}, stations: ${stations.length}/${data.length}`)
-	console.log(`Bike [0] location: `, toLocation(bikes[0]))
-	console.log(`Station [0] location: `, toLocation(stations[0]))
-	// distances are comparable, because they implement .valueOf
-	console.log(`Distance min([0] -> [0], [1] -> [1]): ${minDistance([
-			Distance.between(toLocation(bikes[0]), toLocation(stations[0])),
-			Distance.between(toLocation(bikes[1]), toLocation(stations[1])),
-		])
-	}`)
-}
+console.log(`Bikes: ${bikes.length}/${data.length}, stations: ${stations.length}/${data.length}`)
 
 console.log(`Minimum distance: `, 
 	minDistance(
