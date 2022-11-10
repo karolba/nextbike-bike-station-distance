@@ -17,4 +17,4 @@ $ ./run.sh 'https://wroclawskirower.pl/mapa-stacji/' # A link to a Nextbike map 
 
 ## Results
 
-For Wrocław, it seems that the minimum distance is about 100 meters - bikes to stations closer than that appear from time to time (as can be seen on the screenshot) but there's always only a few of them - I assume those are some sort of flukes.
+For Wrocław, it seems that the maximum distance is about 100 meters - bikes to stations closer than that appear from time to time (as can be seen on the screenshot) but there's always only a few of them - I assume those are some sort of flukes.
