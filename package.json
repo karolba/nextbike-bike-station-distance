@@ -1,13 +1,13 @@
 {
-  "name": "nextbike",
+  "name": "nextbike-bike-station-distance",
   "version": "1.0.0",
-  "description": "",
+  "description": "A script analysing how far Nextbike bikes can be parked from stations and still count as left on the station",
   "main": "process.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "./run.sh"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Karol Baraniecki",
+  "license": "MIT",
   "dependencies": {
     "geo-distance": "^0.2.0"
   }
