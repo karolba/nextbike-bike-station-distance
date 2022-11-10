@@ -12,3 +12,7 @@ curl "$1" \
 	| sed -e "s/^ *var NEXTBIKE_PLACES_DB = JSON.parse('//" -e "s/'); *\$//" \
 	> "$file"
 ./process.js "$file"
+
+echo ''
+echo 'To display those statistics again, but without redownloading from nextbike, run:'
+echo "\$ ./process.js $file"
